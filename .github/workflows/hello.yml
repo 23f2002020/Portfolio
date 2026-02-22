@@ -8,19 +8,24 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: 23f2002020@ds.study.iitm.ac.in
-        run: echo "Hello from 23f2002020@ds.study.iitm.ac.in"
+      # Example dependency setup (Node)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
       - name: prime-cache-2a6947b
         id: cache
         uses: actions/cache@v4
         with:
-          path: ~/.cache
+          path: |
+            ~/.npm
           key: cache-2a6947b
 
-      - name: Echo cache result
-        run: echo "Cache hit - ${{ steps.cache.outputs.cache-hit }}"
+      - name: Show cache result
+        run: echo "Cache hit? ${{ steps.cache.outputs.cache-hit }}"
