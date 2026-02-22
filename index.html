@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | IITM DS Student</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #161b22, #1f6feb33);
+      border-bottom: 1px solid #30363d;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.8rem; color: #58a6ff; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; color: #8b949e; }
+    .badge {
+      display: inline-block;
+      background: #1f6feb;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 6px 4px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      color: #58a6ff;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 8px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: #58a6ff; }
+    .card h3 { color: #e6edf3; margin-bottom: 8px; }
+    .card p { color: #8b949e; font-size: 0.9rem; }
+    .card a {
+      display: inline-block;
+      margin-top: 12px;
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .card a:hover { text-decoration: underline; }
+    .skills span {
+      display: inline-block;
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin: 5px;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+    .contact-box {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+    }
+    .contact-box a { color: #58a6ff; text-decoration: none; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #8b949e;
+      font-size: 0.85rem;
+      border-top: 1px solid #30363d;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ì±ã Hello, I'm a Data Science Student</h1>
+  <p>IIT Madras | BS in Data Science & Applications</p>
+  <br/>
+  <span class="badge">Python</span>
+  <span class="badge">Machine Learning</span>
+  <span class="badge">Data Analysis</span>
+  <span class="badge">Git</span>
+  <span class="badge">SQL</span>
+</header>
+
+<section>
+  <h2>Ì∫Ä Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Git Security Fix</h3>
+      <p>Removed sensitive .env credentials from full Git history using BFG Repo Cleaner.</p>
+      <a href="https://github.com/23f2002020/git-security-fix" target="_blank">‚Üí View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Data Science Assignments</h3>
+      <p>Collection of data analysis, ML models, and visualization projects from IITM coursework.</p>
+      <a href="https://github.com/23f2002020" target="_blank">‚Üí View on GitHub</a>
+    </div>
+    <div class="card">
+      <h3>Git Time Travel</h3>
+      <p>Investigated production incidents by navigating Git history, bisect, and blame techniques.</p>
+      <a href="https://github.com/23f2002020" target="_blank">‚Üí View on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Ìª† Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Scikit-learn</span>
+    <span>SQL</span>
+    <span>Git & GitHub</span>
+    <span>Linux / Bash</span>
+    <span>Data Visualization</span>
+    <span>Statistics</span>
+    <span>Machine Learning</span>
+  </div>
+</section>
+
+<section>
+  <h2>Ì≥¨ Contact</h2>
+  <div class="contact-box">
+    <p>Feel free to reach out for collaborations or opportunities!</p>
+    <br/>
+    <p>Ì≥ß Email: <a href="mailto:23f2002020@ds.study.iitm.ac.in">
+      <!--email_off-->23f2002020@ds.study.iitm.ac.in<!--/email_off-->
+    </a></p>
+    <br/>
+    <p>Ì∞ô GitHub: <a href="https://github.com/23f2002020" target="_blank">github.com/23f2002020</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>Built with ‚ù§Ô∏è by IITM Data Science Student ¬∑ 23f2002020@ds.study.iitm.ac.in</p>
+  <p>¬© 2026 ¬∑ Hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
